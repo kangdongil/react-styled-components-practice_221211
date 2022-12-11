@@ -4,7 +4,10 @@ const Father = styled.div`
   display: flex;
 `;
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  required: true,
+  minLength: 10,
+})`
   background-color: tomato;
 
 `;
@@ -12,13 +15,13 @@ const Input = styled.input`
 function App() {
   return (
     <Father as="header">
-      <Input required />
-      <Input required />
-      <Input required />
-      <Input required />
-      <Input required />
-      <Input required />
-      <Input required />
+      <Input />
+      <Input />
+      <Input />
+      <Input />
+      <Input />
+      <Input />
+      <Input />
     </Father>
   );
 }
