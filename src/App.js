@@ -23,16 +23,30 @@ const rotationAnimation = keyframes`
 `;
 
 const Box = styled.div`
-  background-color: tomato;
   width: 200px;
   height: 200px;
-  animation: ${rotationAnimation} 1s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  animation: ${rotationAnimation} .7s linear infinite;
+  span {
+    font-size: 36px;
+    &:hover {
+      font-size: 64px;
+    }
+    &:active {
+      opacity: 0;
+    }
+  }
 `;
 
 function App() {
   return (
     <Wrapper>
-      <Box />
+      <Box>
+        <span>😝</span>
+      </Box>
     </Wrapper>
   );
 }
