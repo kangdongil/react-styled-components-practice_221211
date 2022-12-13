@@ -64,3 +64,12 @@ const Btn = styled.button.attrs({
   ...
 `;
 ```
+
+## 2.0 React+TypeScript
+### 2.1 CRA를 TypeScript Template으로 설치하기
+- `npx create-react-app my-app --template typescript`
+- `npm i --save typescript @types/node @types/react @types/react-dom @types/jest`
+- `js` `ts` `tsx`
+- `npm i --save-dev @types/styled-components`
+- `DefinitelyTyped`: `@types/`. js 패키지를 ts에게 설명하기
+- 컴포넌트를 type한다. typescript에게 컴포넌트에 대해 설명해준다
